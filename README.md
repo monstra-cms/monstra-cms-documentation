@@ -1,2 +1,1 @@
-# monstra-cms-documetation
-Monstra CMS Documentation
+# Monstra CMS Documentation
