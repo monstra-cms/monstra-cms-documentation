@@ -1,43 +1,41 @@
-<p>The Shortcode API s a simple regex based parser that allows you to replace simple bbcode-like tags within a HTMLText or HTMLVarchar field when rendered into a content.</p><br>
+The Shortcode API s a simple regex based parser that allows you to replace simple bbcode-like tags within a HTMLText or HTMLVarchar field when rendered into a content.
 
-<p>Examples of shortcode tags:</p>
+Examples of shortcode tags:
 
-<pre class="prettyprint">
+```
 {{shortcode}}
 {{shortcode parameter="value"}}
-</pre>
+```
 
-<p>Example of escaping shortcodes:</p>
+Example of escaping shortcodes:
 
-<pre class="prettyprint">
+```
 {{{shortcode}}}
-</pre>
+```
 
-<br>
 
-<h3>Add new shortcode</h3>
+### Add new shortcode
 
-<p>Your shorcode function:</p>
+Your shorcode function:
 
-<pre class="prettyprint">
+```php
 function returnSiteUrl() {
    return Option::get('siteurl');
 }
-</pre>
+```
 
-<p>Add shortcode {siteurl}</p>
+Add shortcode {siteurl}
 
-<pre class="prettyprint">
+```php
 Shortcode::add('siteurl', 'returnSiteUrl');
-</pre>
+```
 
-<br>
 
-<h3>Add new shortcode with Variables</h3>
+### Add new shortcode with Variables
 
-<p>Your shorcode function:</p>
+Your shorcode function:
 
-<pre class="prettyprint">
+```php
 function foo($attributes) {
     // Extract
     extract($attributes);
@@ -48,36 +46,35 @@ function foo($attributes) {
     // return
     return $text;
 }
-</pre>
+```
 
 
 
-<p>Add shortcode {foo text="Hello World"}</p>
+Add shortcode {foo text="Hello World"}
 
-<pre class="prettyprint">
+```php
 Shortcode::add('foo', 'foo');
-</pre>
+```
 
-<p>Usage:</p>
+Usage:
 
-<pre class="prettyprint">
+```
 {foo text="Hello World"}
-</pre>
+```
 
-<p>Result:</p>
+Result:
 
-<pre>
+```
 Hello World
-</pre>
+```
 
 
-<br>
 
-<h3>Add new shortcode with Variables and Content</h3>
+### Add new shortcode with Variables and Content
 
-<p>Your shorcode function:</p>
+Your shorcode function:
 
-<pre class="prettyprint">
+```php
 function foo($attributes, $content) {
     // Extract
     extract($attributes);
@@ -86,62 +83,58 @@ function foo($attributes, $content) {
     if (isset($color)) $color = $color; else $color = 'black';
 
     // return
-    return '&lt;span style="color:'.$color.'"&gt;'.Filter::apply('content', $content).'&lt;/span&gt;';
+    return '<span style="color:' . $color . '">' . Filter::apply('content', $content) . '</span>';
 }
 
-</pre>
+```
 
-<p>Add shortcode {foo color="red"}</p>
+Add shortcode {foo color="red"}
 
-<pre class="prettyprint">
+```php
 Shortcode::add('foo', 'foo');
-</pre>
+```
 
-<p>Usage:</p>
+Usage:
 
-<pre class="prettyprint">
+```
 {foo color="red"}Hello World{/foo}
-</pre>
+```
 
 
-<p>Result:</p>
+Result:
 
-<pre>
+```
 <span style="color:red">Hello World</span>
-</pre>
+```
 
-<br>
 
-<h3>Check if a shortcode has been registered.</h3>
+### Check if a shortcode has been registered.
 
-<pre class="prettyprint">
+```php
 if (Shortcode::exists('foo')) {
     // do something...
 }
-</pre>
+```
 
-<br>
 
-<h3>Remove a specific registered shortcode.</h3>
+### Remove a specific registered shortcode.
 
-<pre class="prettyprint">
+```php
 Shortcode::delete('foo');
-</pre>
+```
 
-<br>
 
-<h3>Remove all registered shortcodes.</h3>
+### Remove all registered shortcodes.
 
-<pre class="prettyprint">
+```php
 Shortcode::clear();
-</pre>
+```
 
-<br>
 
-<h3>Braces</h3>
+### Braces
 
-<p>The shortcode parser does not accept braces within attributes. Thus the following will fail:</p>
+The shortcode parser does not accept braces within attributes. Thus the following will fail:
 
-<pre class="prettyprint">
+```
 {foo attribute="{Some value}"}Hello World{/foo}
-</pre>
+```
