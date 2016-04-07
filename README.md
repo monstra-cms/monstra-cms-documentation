@@ -1,137 +1,56 @@
-<div class="row">
+Users Guide
+===========
 
-<div class="col-md-6">
+* [Welcome](welcome.md)
 
-<h3>Users Guide</h3>
+### Installation
 
-<ul>
+* [System Requirements](system-requirements.md)
+* [Installation on a Web Server](installation.md)
+* [Upgrading to the Latest Version](upgrade.md)
+* [Moving Monstra or Migrating Hosts](migrating.md)
+* [Plugins Installation](plugins-installation.md)
+* [Themes Installation](theme-installation.md)
 
-<li><a href="welcome">Welcome</a></li>
+### Admin Reference
 
-<li><strong>Installation</strong>
+* Pages
+* Blocks
+* Files
+* Menu
+* Plugins
+* Themes
+* Snippets
+* Snippets
+* Settings
+* Users
+* Information
 
-<ul>
+Developers Guide
+================
 
-<li><a href="system-requirements">System Requirements</a></li>
+### Getting started
 
-<li><a href="installation">Installation on a Web Server</a></li>
+* [Coding Standards](standards.md)
+* [Constants](constants.md)
+* [Environments](environments.md)
+* [Error handling](error-handling.md)
+* [Database Schema](monstra-database-schema.md)
+* [Contribute via GitHub](contribute-via-github.md)
 
-<li><a href="upgrade">Upgrading to the Latest Version</a></li>
+### Theme development
 
-<li><a href="migrating">Moving Monstra or Migrating Hosts</a></li>
+* [Theme Creation](theme-creation.md)
+* [Template Tags](theme-template-tags.md)
+* [CSS Variables](css-variables.md)
 
-<li><a href="plugins-installation">Plugins Installation</a></li>
+### Plugin development
 
-<li><a href="theme-installation">Themes Installation</a></li>
+* [Plugin Creation](plugins-creation.md)
 
-</ul>
+### API's
 
-</li>
-
-<li><strong>Admin Reference</strong>
-
-<ul>
-
-<li>Pages</li>
-
-<li>Blocks</li>
-
-<li>Files</li>
-
-<li>Menu</li>
-
-<li>Plugins</li>
-
-<li>Themes</li>
-
-<li>Snippets</li>
-
-<li>Snippets</li>
-
-<li>Settings</li>
-
-<li>Users</li>
-
-<li>Information</li>
-
-</ul>
-
-</li>
-
-</ol>
-
-</div>
-
-<div class="col-md-6">
-
-<h3>Developers Guide</h3>
-
-<ul>
-
-<li><strong>Getting started</strong>
-
-<ul>
-
-<li><a href="standards">Coding Standards</a></li>
-
-<li><a href="constants">Constants</a></li>
-
-<li><a href="environments">Environments</a></li>
-
-<li><a href="error-handling">Error handling</a></li>
-
-<li><a href="monstra-database-schema">Database Schema</a></li>
-
-<li><a href="contribute-via-github">Contribute via GitHub</a></li>
-
-</ul>
-
-</li>
-
-<li><strong>Theme development</strong>
-
-<ul>
-
-<li><a href="theme-creation">Theme Creation</a></li>
-
-<li><a href="theme-template-tags">Template Tags</a></li>
-
-<li><a href="css-variables">CSS Variables</a></li>
-
-</ul>
-
-</li>
-
-<li><strong>Plugin development</strong>
-
-<ul>
-
-<li><a href="plugins-creation">Plugin Creation</a></li>
-
-</ul>
-
-</li>
-
-<li><strong>API's</strong>
-
-<ul>
-
-<li><a href="plugin-api">Plugin API</a></li>
-
-<li><a href="option-api">Options API</a></li>
-
-<li><a href="shortcode-api">Shortcode API</a></li>
-
-<li><a href="xmldb-api">XMLDB API</a></li>
-
-</ul>
-
-</li>
-
-</ul>
-
-
-
-</div>
-
-</div>
+* [Plugin API](plugin-api.md)
+* [Options API](option-api.md)
+* [Shortcode API](shortcode-api.md)
+* [XMLDB API](xmldb-api.md)
