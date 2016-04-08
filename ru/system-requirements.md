@@ -1,3 +1,8 @@
-Operation system: Unix, Linux, Windows, Mac OS <br>
-Middleware: PHP 5.3 with PHP's <a href="http://php.net/simplexml">SimpleXML module</a> and <a href="http://php.net/mbstring">Multibyte String module</a> <br>
-Webserver: Apache with <a href="http://httpd.apache.org/docs/current/mod/mod_rewrite.html">Mod Rewrite</a> or Ngnix with <a href="http://wiki.nginx.org/HttpRewriteModule">Rewrite Module</a><br>
+### Operation system
+Unix, Linux, Windows or Mac OS
+
+### Middleware
+PHP 5.3 with PHP's [SimpleXML module](http://php.net/simplexml) and [Multibyte String module](http://php.net/mbstring)
+
+### Webserver
+Apache with [Mod Rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html) or Ngnix with [Rewrite Module](http://wiki.nginx.org/HttpRewriteModule)

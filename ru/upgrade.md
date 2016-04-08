@@ -1,187 +1,71 @@
-<h4>2.2.1 <small><i class="icon-arrow-right"></i></small> 2.3.0</h4>
+### 2.2.1 &rsaquo; 2.3.0
 
-<ol>
+1. Download [monstra-2.3.0.zip](https://bitbucket.org/Awilum/monstra/downloads/monstra-2.3.0.zip)
+2. Unzip the contents to a new folder on your local computer.
+3. Upload `/engine/`, `/plugins/`, `/admin/`, `/libraries/`, `/public/assets/`, `/index.php` with an FTP client to your host.
 
-<li>Download <a href="https://bitbucket.org/Awilum/monstra/downloads/monstra-2.3.0.zip">monstra-2.3.0.zip</a></li>
+### 2.2.0 &rsaquo; 2.2.1
 
-<li>Unzip the contents to a new folder on your local computer.</li>
+1. Download [monstra-2.2.1.zip](https://bitbucket.org/Awilum/monstra/downloads/monstra-2.2.1.zip)
+2. Unzip the contents to a new folder on your local computer.
+3. Upload `/plugins/`, `/libraries/Gelato/` with an FTP client to your host.
 
-<li>Upload <code>/engine/</code>, <code>/plugins/</code>, <code>/admin/</code>, <code>/libraries/</code>, <code>/public/assets/</code>, <code>/index.php</code> with an FTP client to your host.</li>
+### 2.1.3 &rsaquo; 2.2.0
 
+1. Download [monstra-2.2.0.zip](https://bitbucket.org/Awilum/monstra/downloads/monstra-2.2.0.zip)
+2. Unzip the contents to a new folder on your local computer.
+3. Upload `/engine/`, `/plugins/`, `/admin/`, `/libraries/`, `/public/assets/`, `/index.php` with an FTP client to your host and remove `/monstra/` directory.
+4. Download [update_to_monstra_2_2_0.zip](http://monstra.org/public/uploads/monstra/update_to_monstra_2_2_0.zip)
+5. Unzip the contents of `update_to_monstra_2_2_0.zip` and upload `update_to_monstra_2_2_0.php` with an FTP client to your host.
+6. Navigate to http://example.org/update_to_monstra_2_2_0.php in the browser.
+
+### 2.1.2 &rsaquo; 2.1.3
+
+1. Download [monstra-2-1-3.zip](https://github.com/downloads/Awilum/monstra-cms/monstra-2-1-3.zip)
+2. Unzip the contents to a new folder on your local computer.
+3. Upload `/monstra/`, `/plugins/`, `/public/assets/` with an FTP client to your host.
+
+### 2.1.1 &rsaquo; 2.1.2
+
+1. Download [monstra-2-1-2.zip](https://github.com/downloads/Awilum/monstra-cms/monstra-2-1-2.zip)
+2. Unzip the contents to a new folder on your local computer.
+3. Upload `/monstra/`, `/plugins/`, `/admin/` with an FTP client to your host.
+
+### 2.1.0 &rsaquo; 2.1.1
+
+1. Download [monstra-2-1-1.zip](https://github.com/downloads/Awilum/monstra-cms/monstra-2-1-1.zip)
+2. Unzip the contents to a new folder on your local computer.
+3. Upload `/monstra/`, `/plugins/` with an FTP client to your host.
+
+### 2.0.1 &rsaquo; 2.1.0
+
+1. Download [monstra-2-1-0.zip](https://github.com/downloads/Awilum/monstra-cms/monstra-2-1-0.zip)
+2. Unzip the contents to a new folder on your local computer.
+3. Upload `/admin/`, `/monstra/`, `/public/assets/`, `/boot/`, `/plugins/` and `/index.php`  with an FTP client to your host.
+4. Download [update_to_monstra_2_1_0.zip](http://monstra.org/public/uploads/monstra/update_to_monstra_2_1_0.zip)
+5. Unzip the contents of `update_to_monstra_2_1_0.zip` and upload `update_to_monstra_2_1_0.php` with an FTP client to your host.
+6. Navigate to http://example.org/update_to_monstra_2_1_0.php in the browser.
 </ol>
 
-<br>
-
-
-
-<h4>2.2.0 <small><i class="icon-arrow-right"></i></small> 2.2.1</h4>
-
-<ol>
-
-<li>Download <a href="https://bitbucket.org/Awilum/monstra/downloads/monstra-2.2.1.zip">monstra-2.2.1.zip</a></li>
-
-<li>Unzip the contents to a new folder on your local computer.</li>
-
-<li>Upload <code>/plugins/</code>, <code>/libraries/Gelato/</code> with an FTP client to your host.</li>
-
-</ol>
-
-
-
-<br>
-
-
-
-<h4>2.1.3 <small><i class="icon-arrow-right"></i></small> 2.2.0</h4>
-
-<ol>
-
-    <li>Download <a href="https://bitbucket.org/Awilum/monstra/downloads/monstra-2.2.0.zip">monstra-2.2.0.zip</a></li>
-
-    <li>Unzip the contents to a new folder on your local computer.</li>
-
-    <li>Upload <code>/engine/</code>, <code>/plugins/</code>, <code>/admin/</code>, <code>/libraries/</code>, <code>/public/assets/</code>, <code>/index.php</code> with an FTP client to your host and remove <code>/monstra/</code> directory.</li>
-
-    <li>Download <a href="http://monstra.org/public/uploads/monstra/update_to_monstra_2_2_0.zip">update_to_monstra_2_2_0.zip</a></li>
-
-    <li>Unzip the contents of update_to_monstra_2_2_0.zip and upload <code>update_to_monstra_2_2_0.php</code> with an FTP client to your host.</li>
-
-    <li>Type <a href="#">http://example.org/update_to_monstra_2_2_0.php</a> in the browser.</li>
-
-</ol>
-
-
-
-<br>
-
-
-
-<h4>2.1.2 <small><i class="icon-arrow-right"></i></small> 2.1.3</h4>
-
-<ol>
-
-<li>Download <a href="https://github.com/downloads/Awilum/monstra-cms/monstra-2-1-3.zip">monstra-2-1-3.zip</a></li>
-
-<li>Unzip the contents to a new folder on your local computer.</li>
-
-<li>Upload <code>/monstra/</code>, <code>/plugins/</code>, <code>/public/assets/</code> with an FTP client to your host.</li>
-
-</ol>
-
-
-
-<br>
-
-
-
-<h4>2.1.1 <small><i class="icon-arrow-right"></i></small> 2.1.2</h4>
-
-<ol>
-
-<li>Download <a href="https://github.com/downloads/Awilum/monstra-cms/monstra-2-1-2.zip">monstra-2-1-2.zip</a></li>
-
-<li>Unzip the contents to a new folder on your local computer.</li>
-
-<li>Upload <code>/monstra/</code>, <code>/plugins/</code>, <code>/admin/</code> with an FTP client to your host.</li>
-
-</ol>
-
-
-
-<br>
-
-
-
-<h4>2.1.0 <small><i class="icon-arrow-right"></i></small> 2.1.1</h4>
-
-<ol>
-
-<li>Download <a href="https://github.com/downloads/Awilum/monstra-cms/monstra-2-1-1.zip">monstra-2-1-1.zip</a></li>
-
-<li>Unzip the contents to a new folder on your local computer.</li>
-
-<li>Upload <code>/monstra/</code>, <code>/plugins/</code> with an FTP client to your host.</li>
-
-</ol>
-
-
-
-<br>
-
-
-
-<h4>2.0.1 <small><i class="icon-arrow-right"></i></small> 2.1.0</h4>
-
-<ol>
-
-<li>Download <a href="https://github.com/downloads/Awilum/monstra-cms/monstra-2-1-0.zip">monstra-2-1-0.zip</a></li>
-
-<li>Unzip the contents to a new folder on your local computer.</li>
-
-<li>Upload <code>/admin/</code>, <code>/monstra/</code>, <code>/public/assets/</code>, <code>/boot/</code>, <code>/plugins/</code> and <code>/index.php</code>  with an FTP client to your host.</li>
-
-<li>Download <a href="http://monstra.org/public/uploads/monstra/update_to_monstra_2_1_0.zip">update_to_monstra_2_1_0.zip</a></li>
-
-<li>Unzip the contents of update_to_monstra_2_1_0.zip and upload <code>update_to_monstra_2_1_0.php</code> with an FTP client to your host.</li>
-
-<li>Type <a href="#">http://example.org/update_to_monstra_2_1_0.php</a> in the browser.</li>
-
-</ol>
-
-
-
-<br>
-
-
-
-<h4>2.0.0 <small><i class="icon-arrow-right"></i></small> 2.0.1</h4>
-
-<ol>
-
-<li>Download <a href="https://github.com/downloads/Awilum/monstra-cms/monstra-2-0-1.zip">monstra-2-0-1.zip</a></li>
-
-<li>Unzip the contents to a new folder on your local computer.</li>
-
-<li>Upload <code>/monstra/</code>, <code>/plugins/</code> with an FTP client to your host.</li>
-
-</ol>
-
-
-
-<br>
-
-
-
-<h4>1.x.x <small><i class="icon-arrow-right"></i></small> 2.0.0</h4>
-
-<ol>
-
-<li>Download <a href="https://github.com/downloads/Awilum/monstra-cms/monstra-2-0-0.zip">monstra-2-0-0.zip</a></li>
-
-<li>Unzip the contents to a new folder on your local computer.</li>
-
-<li>Upload <code>/admin/</code>, <code>/monstra/</code>, <code>/public/assets/</code>, <code>/plugins/</code> and <code>/index.php</code>  with an FTP client to your host.</li>
-
-<li>Download <a href="http://monstra.org/public/uploads/monstra/update_to_monstra_2_0_0.zip">update_to_monstra_2_0_0.zip</a></li>
-
-<li>Unzip the contents of update_to_monstra_2_0_0.zip and upload <code>update_to_monstra_2_0_0.php</code> with an FTP client to your host.</li>
-
-<li>Type <a href="#">http://example.org/update_to_monstra_2_0_0.php</a> in the browser.</li>
-
-</ol>
-
-
+### 2.0.0 &rsaquo; 2.0.1
+
+1. Download [monstra-2-0-1.zip](https://github.com/downloads/Awilum/monstra-cms/monstra-2-0-1.zip)
+2. Unzip the contents to a new folder on your local computer.
+3. Upload `/monstra/`, `/plugins/` with an FTP client to your host.
+
+### 1.x.x &rsaquo; 2.0.0
+
+1. Download [monstra-2-0-0.zip](https://github.com/downloads/Awilum/monstra-cms/monstra-2-0-0.zip)
+2. Unzip the contents to a new folder on your local computer.
+3. Upload `/admin/`, `/monstra/`, `/public/assets/`, `/plugins/` and `/index.php`  with an FTP client to your host.
+4. Download [update_to_monstra_2_0_0.zip](http://monstra.org/public/uploads/monstra/update_to_monstra_2_0_0.zip)
+5. Unzip the contents of `update_to_monstra_2_0_0.zip` and upload `update_to_monstra_2_0_0.php` with an FTP client to your host.
+6. Navigation to http://example.org/update_to_monstra_2_0_0.php in the browser.
 
 <!--
-
 <h3>Steps to Update</h3>
-
-<ol><li><a href="http://monstra.org/download">Download the latest version.</a></li>
-
-<li>Unzip the contents to a new folder on your local computer.</li>
-
-<li>Upload <code>/admin/</code>, <code>/engine/</code>, <code>/libraries/</code>, <code>/plugins/</code> and <code>/index.php</code>  with an FTP client to your host.</li>
-
+<ol><li><a href="http://monstra.org/download">Download the latest version.
+<li>Unzip the contents to a new folder on your local computer.
+<li>Upload `/admin/`, `/engine/`, `/libraries/`, `/plugins/` and `/index.php`  with an FTP client to your host.
 </ol>
-
 -->

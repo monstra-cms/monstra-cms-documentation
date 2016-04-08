@@ -1,49 +1,33 @@
-The support of environments helps Monstra to make decisions based on the environment setting.<br>
+The support of environments helps Monstra to make decisions based on the environment setting.
 
-<br>
+### Environments list
 
-<h3>Environments list</h3>
+Monstra has four predefined environments.
 
-Monstra has four predefined environments.<br>
+`Monstra::DEVELOPMENT`
+The development environment.
 
-<br>
+`Monstra::TESTING`
+The test environment.
 
-<code>Monstra::DEVELOPMENT</code>
-The development environment.<br>
+`Monstra::STAGING`
+The staging environment.
 
-<br>
-<code>Monstra::TESTING</code>
-The test environment.<br>
+`Monstra::PRODUCTION`
+The production environment.
 
-<br>
+### Set Your Environment
 
-<code>Monstra::STAGING</code>
-The staging environment.<br>
+Setting your environment is done by setting the `Monstra::$environment` in `/engine/_init.php`
 
-<br>
+### Environments and Config
 
-<code>Monstra::PRODUCTION</code>
-The production environment.<br>
+Based on the environment the Monstra is set to, the Monstra Core class looks for environment-specific defines and preloaded actions, filters, shortcodes. The Monstra Core class will look for the same file name in a directory that's named after the current environment.
 
-<br>
+Here is an example to illustrate this:
 
-<h3>Set Your Environment</h3>
-
-Setting your environment is done by setting the <code>Monstra::$environment</code> in <code>/engine/_init.php</code>
-
-<br><br>
-
-
-<h3>Environments and Config</h3>
-
-Based on the environment the Monstra is set to, the Monstra Core class looks for environment-specific defines and preloaded actions, filters, shortcodes. The Monstra Core class will look for the same file name in a directory that's named after the current environment.<br><br>
-
-Here is an example to illustrate this:<br><br>
-
-<pre class="prettyprint">
- boot/
-  ├── development/
-  │   ├── defines.php
-  └── production/
-      └── defines.php
-</pre>
+	boot/
+	 ├── development/
+	 │   └── defines.php
+	 └── production/
+	     └── defines.php
