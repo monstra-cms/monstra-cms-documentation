@@ -44,7 +44,7 @@
 * [Теги в шаблонах](theme-template-tags.md)
 * [CSS переменные](css-variables.md)
 
-### Plugin development
+### Разработка плагина
 
 * [Создание плагинов](plugins-creation.md)
 
