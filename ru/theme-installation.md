@@ -1,2 +1,2 @@
-1. Unzip theme to the folder `/public/themes/`
-2. Go to administration panel: Themes &rsaquo; select theme &rsaquo; save
+1. Распаковать архив темы в директорию `/public/themes/`
+2. Перейти в панель администратора: Темы &rsaquo; выбрать тему &rsaquo; Сохранить
