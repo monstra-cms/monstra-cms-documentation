@@ -1,10 +1,10 @@
-The Monstra error handler converts all errors to ErrorExceptions.  
-This allows Monstra to display a error page that contains a lot more information than the standard PHP error pages when something bad happens.  
-The error handler will also try to log the error.
+Обработчик ошибок Monstra преобразует все ошибки в ErrorExceptions.
+Это позволяет Monstra отобразить страницу ошибки, который содержит гораздо больше информации, чем стандартные страницы ошибок PHP, когда случается что-то плохое
+Обработчик ошибок также будет записывать лог ошибки.
 
-Note that error page with error information will be displayed if the `Monstra::$environment` is `Monstra::DEVELOPMENT`
+Обратите внимание, что страница ошибки с информацией об ошибке будет отображаться, если `Monstra::$environment` = `Monstra::DEVELOPMENT`
 
-### Examples
+### Примеры
 
-Here's an example of what an error can look like in Monstra CMS:
+Это пример вывода ошибки в Monstra CMS:
 ![Error handling](http://monstra.org/public/uploads/images/general/docs/error-handling.png)
