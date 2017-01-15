@@ -20,7 +20,7 @@
 | `UPLOADS`               | Путь файловой системы к директории 'uploads' куда загружаются все файлы через файловый менеджер                                               |
 | `MONSTRA_PASSWORD_SALT` | Соль пароля                                                                              |
 | `MONSTRA_DATE_FORMAT`   | Формат даты. По умолчанию `Y-m-d / H:i:s`                                                    |
-| `MONSTRA_EVAL_PHP`      | Eval php. По умолчанию `false`                                                               |
+| `MONSTRA_EVAL_PHP`      | Использование PHP кода в текстовом редакторе. По умолчанию `false`                                                               |
 | `CHECK_MONSTRA_VERSION` | Проверка версии Monstra CMS. По умолчанию `true`                                               |
 | `MONSTRA_DB_DSN`        | Имя источника данных DSN (Data Source Name). Подключение через ORM                                                   |
 | `MONSTRA_DB_USER`       | Логин к базе данных                                                                 |
