@@ -1,13 +1,15 @@
-### Options Table
+##Список таблиц с их полями
 
-| Field Name |
+### Таблица options (Параметры)
+
+| Имя поля |
 |------------|
 | name       |
 | value      |
 
-#### Monstra Options
+#### Параметры Monstra
 
-| Field Name                  |
+| Имя поля                  |
 |-----------------------------|
 | sitename                    |
 | description                 |
@@ -26,9 +28,9 @@
 | users_frontend_registration |
 
 
-### Plugins Table
+### Таблица plugins (Плагины)
 
-| Field Name |
+| Имя поля |
 |------------|
 | name       |
 | location   |
@@ -36,9 +38,9 @@
 | priority   |
 
 
-### Users Table
+### Таблица users (Пользователи)
 
-| Field Name |
+| Имя поля |
 |------------|
 | login      |
 | password   |
@@ -55,9 +57,9 @@
 
 
 
-### Menu Table
+### Таблица menu (Меню)
 
-| Field Name |
+| Имя поля |
 |------------|
 | name       |
 | link       |
@@ -66,9 +68,9 @@
 | category   |
 
 
-### Pages Table
+### Таблица pages (Страницы)
 
-| Field Name    |
+| Имя поля    |
 |---------------|
 | slug          |
 | robots_index  |
