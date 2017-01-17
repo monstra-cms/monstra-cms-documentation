@@ -1,89 +1,89 @@
-### Site Module
+### Информация о сайте
 
-#### Outputs site name
+#### Название сайта
 ```php
 <?php echo Site::name(); ?>
 ```
 
-#### Outputs site theme
+#### Название темы
 ```php
 <?php echo Site::theme(); ?>
 ```
 
-#### Outputs site title
+#### Заголовок сайта
 ```php
 <?php echo Site::title(); ?>
 ```
 
-#### Outputs site description
+#### Описание сайта
 ```php
 <?php echo Site::description(); ?>
 ```
 
-#### Outputs site keywords
+#### Ключевые слова
 ```php
 <?php echo Site::keywords(); ?>
 ```
 
-#### Outputs site slogan
+#### Слоган сайта
 ```php
 <?php echo Site::slogan(); ?>
 ```
 
-#### Outputs site content
+#### Контент сайта
 ```php
 <?php echo Site::content(); ?>
 ```
 
-#### Outputs site url
+#### Адрес сайта
 ```php
 <?php echo Site::url(); ?>
 ```
 
-#### Outputs copyright information
+#### Выводит название CMS
 ```php
 <?php echo Site::powered(); ?>
 ```
 
 
-### Pages plugin
+### Инофрмация о странице
 
-#### Outputs date of current page
+#### Дата текущей страницы
 ```php
 <?php echo Page::date(); ?>
 ```
 
-#### Outputs author of current page
+#### Автор текущей страницы
 ```php
 <?php echo Page::author(); ?>
 ```
 
-#### Outputs the available pages
+#### Дочернии страницы у текущей страницы
 ```php
 <?php echo Page::available(); ?>
 ```
 
-#### Outputs page breadcrumbs
+#### Хлебные крошки
 ```php
 <?php echo Page::breadcrumbs(); ?>
 ```
 
-#### Outputs page url
+#### Адрес страницы (полный адрес http://xxx/ru/site/page)
 ```php
 <?php echo Page::url(); ?>
 ```
 
-#### Outputs page slug
+#### Ссылка страницы (url)
 ```php
 <?php echo Page::slug(); ?>
 ```
 
-#### Outputs page meta robots
+#### Мета информация о индексации
 ```php
 <?php echo Page::robots(); ?>
 ```
 
-#### Get children pages for a specific parent page
+#### Выводит дочернии страницы по его url
 ```php
 <?php $pages = Page::children('page'); ?>
 <?php foreach($pages as $page) { ?>
@@ -92,30 +92,30 @@
 ```
 
 
-### Menu plugin
+### Меню
 
-#### Outputs menu
+#### Выводит меню
 ```php
 <?php echo Menu::get(); ?>
 <?php echo Menu::get('category_name'); ?>
 ```
 
 
-### Blocks plugin
+### Блоки
 
-#### Outputs block
+#### Выводит блок по его имени
 ```php
 <?php echo Block::get('block_name'); ?>
 ```
 
-### Snippets plugin
+### Сниппеты
 
-#### Outputs snippet
+#### Выводит сниппет по его имени
 ```php
 <?php echo Snippet::get('snippet_name'); ?>
 ```
 
-#### Outputs snippet with parameters
+#### Выводит сниппет  по его имени с параметрами
 ```php
 <?php echo Snippet::get('snippet_name', array('message' => 'Hello World')); ?>
 ```
