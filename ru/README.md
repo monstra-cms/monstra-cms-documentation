@@ -50,8 +50,8 @@
 
 ### API
 
-* [Plugin API](plugin-api.md)
-* [Options API](option-api.md)
-* [Shortcode API](shortcode-api.md)
-* [XMLDB API](xmldb-api.md)
+* [Плагины - Plugin API](plugin-api.md)
+* [Настройки - Options API](option-api.md)
+* [Шоткод - Shortcode API](shortcode-api.md)
+* [База XMLDB API](xmldb-api.md)
 
