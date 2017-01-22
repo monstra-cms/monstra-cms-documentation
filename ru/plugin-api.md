@@ -18,7 +18,8 @@ Plugin::register(
 ```php
 Plugin::admin('blog');
 ```
-
+   
+<br>
 
 ### Представление
 
@@ -48,7 +49,7 @@ View::factory('blog/views/backend/index')
    ->display();
 ```
 
-#### Присваивание новых переменных для представлению.
+#### Присваивание новых переменных для представления.
 
 ```php
 $view->assign('msg', 'сообщение...');
@@ -70,7 +71,7 @@ echo $output;
 $view->display();
 ```
 
-
+<br>
 ### I18n
 
 #### Возвращает перевод строки. Если перевода не существует, то передается оригинальное значение без перевода. Параметры не будут заменены.
@@ -90,7 +91,7 @@ echo __('Hello, world', 'namespace');
 echo __('Hello, :user', 'namespace', array(':user' => $username));
 ```
 
-
+<br>
 ### Действия (Экшены)
 
 #### Хуки это крючки на определенные действия.
@@ -111,16 +112,16 @@ function newLink() {
 Action::run('footer');
 ```
 
+<br>
+### Фильтр
 
-### Filter
-
-#### Apply filters.
+#### Применить фильтр.
 
 ```php
 Filter::apply('content', $content);
 ```
 
-#### Add filter.
+#### Добавить фильтр.
 
 ```php
 Filter::add('content', 'replacer');
@@ -130,54 +131,61 @@ function replacer($content) {
 }
 ```
 
-
+<br>
 ### Stylesheet
 
-#### Add stylesheet
-
+#### Добавить файл стилей
+frontend - витрина сайта
+backend - административная часть
+11 (любое число) - порядок приоритета подключания
 ```php
 Stylesheet::add('path/to/my/stylesheet1.css');
 Stylesheet::add('path/to/my/stylesheet2.css', 'frontend', 11);
 Stylesheet::add('path/to/my/stylesheet3.css', 'backend',12);
 ```
 
-#### Minify, combine and load site stylesheet.
+#### Минификация, оъединение и загрузка стилей.
 
 ```php
 Stylesheet::load();
 ```
 
-
+<br>
 ### Javascript
 
-#### Add javascript
+#### Добавить javascript
 
 ```php
+// frontend - витрина сайта
+// backend - административная часть
+// 11 (любое число) - порядок приоритета подключания
 Javascript::add('path/to/my/script1.js');
 Javascript::add('path/to/my/script2.js', 'frontend', 11);
 Javascript::add('path/to/my/script3.js', 'backend', 12);
 ```
 
-#### Combine and load site javascript.
+#### Оъединение и загрузка скриптов.
 
 ```php
 Javascript::load();
 ```
 
+<br>
+### Навигация в админ интерфейсе
 
-### Navigation
-
-#### Add new item
+#### Добавить новый элемент
 
 ```php
-// Add link for left navigation
+// Добавить ссылку плагина blog в верхнее меню, раздел Контент. 
+// 11 это порядок сортировки
 Navigation::add(__('Blog'), 'content', 'blog', 11);
 
-// Add link for top navigation
+// Добавляет ссылку в меню top, но выводит просто ссылку, а элемент списка 
+// (осталось с прошлой версии, в новой просто не используется)
 Navigation::add(__('View site'), 'top', 'http://site.com/', 11, Navigation::TOP, true);
 ```
 
-#### Draw items
+#### Выводит элементы
 
 ```php
 Navigation::draw('content');
