@@ -1,7 +1,7 @@
-The Options API is a simple and standardized way of storing data in the database. The Options API makes it easy to create, access, update, and delete those options. All the data is being stored in the options.table.xml under a given custom name.
+Options API - это простой и стандартный способ хранения данных в базе данных (настройки, параметры, конфигурация итд).
+API-интерфейс позволяет легко создавать, получать данные, изменять и удалять настройки ваших плагинов и решений. Все данные хранятся в options.table.xml в рамках данного пользовательского имени.
 
-
-### Add new option
+### Создание параметров
 
 ```php
 Option::add('pages_limit', 10);
@@ -9,7 +9,7 @@ Option::add(array('pages_count' => 10, 'pages_default' => 'home'));
 ```
 
 
-### Update option value
+### Обновить значение
 
 ```php
 Option::update('pages_limit', 12);
@@ -17,7 +17,7 @@ Option::update(array('pages_count' => 10, 'pages_default' => 'home'));
 ```
 
 
-### Get option value
+### Получить значение
 
 ```php
 $pages_limit = Option::get('pages_limit');
@@ -27,7 +27,7 @@ if ($pages_limit == '10') {
 ```
 
 
-### Check if option exist
+### Проверить существование параметра
 
 ```php
 if (Option::exists('pages_limit')) {
@@ -36,7 +36,7 @@ if (Option::exists('pages_limit')) {
 ```
 
 
-### Delete option
+### Удаление параметра
 
 ```php
 Option::delete('pages_limit');
