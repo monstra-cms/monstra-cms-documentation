@@ -1,22 +1,22 @@
-The Shortcode API s a simple regex based parser that allows you to replace simple bbcode-like tags within a HTMLText or HTMLVarchar field when rendered into a content.
+Shortcode API это простой парсер на основе регулярного выражения, которая позволяет заменить простые BBCode подобные теги в определенный результа. Шоткод тег вставляется в контент страницы и заменяется во время генерации самой страниицы на сайте.
 
-Examples of shortcode tags:
+Пример шоткода тега:
 
 ```
-{{shortcode}}
-{{shortcode parameter="value"}}
+{shortcode}
+{shortcode parameter="value"}
 ```
 
-Example of escaping shortcodes:
+Пример экранирования шоткода:
 
 ```
 {{{shortcode}}}
 ```
 
 
-### Add new shortcode
+### Добавить новый шоткод
 
-Your shorcode function:
+Ваша функция для шоткода:
 
 ```php
 function returnSiteUrl() {
@@ -24,16 +24,16 @@ function returnSiteUrl() {
 }
 ```
 
-Add shortcode {siteurl}
+Регистрируем шоткод {siteurl}
 
 ```php
 Shortcode::add('siteurl', 'returnSiteUrl');
 ```
 
 
-### Add new shortcode with Variables
+### Добавление нового шокода с параметрами
 
-Your shorcode function:
+Ваша функция для шоткода:
 
 ```php
 function foo($attributes) {
@@ -50,19 +50,19 @@ function foo($attributes) {
 
 
 
-Add shortcode {foo text="Hello World"}
+Регистрация шоткода {foo text="Hello World"}
 
 ```php
 Shortcode::add('foo', 'foo');
 ```
 
-Usage:
+Использование в контенте:
 
 ```
 {foo text="Hello World"}
 ```
 
-Result:
+Результат:
 
 ```
 Hello World
@@ -70,9 +70,9 @@ Hello World
 
 
 
-### Add new shortcode with Variables and Content
+### Добавление нового шоткода с параметрами и контентом
 
-Your shorcode function:
+Ваша функция для шоткода:
 
 ```php
 function foo($attributes, $content) {
@@ -88,27 +88,27 @@ function foo($attributes, $content) {
 
 ```
 
-Add shortcode {foo color="red"}
+Регистрация шоткода {foo color="red"}
 
 ```php
 Shortcode::add('foo', 'foo');
 ```
 
-Usage:
+Применение:
 
 ```
 {foo color="red"}Hello World{/foo}
 ```
 
 
-Result:
+Результат:
 
 ```
 <span style="color:red">Hello World</span>
 ```
 
 
-### Check if a shortcode has been registered.
+### Проверка зарегистрирован шоткод или нет.
 
 ```php
 if (Shortcode::exists('foo')) {
@@ -117,23 +117,23 @@ if (Shortcode::exists('foo')) {
 ```
 
 
-### Remove a specific registered shortcode.
+### Удаление зарегистрированного шоткода.
 
 ```php
 Shortcode::delete('foo');
 ```
 
 
-### Remove all registered shortcodes.
+### Удаление всех зарегистрированных шоткодов.
 
 ```php
 Shortcode::clear();
 ```
 
 
-### Braces
+### Фигурная скобка
 
-The shortcode parser does not accept braces within attributes. Thus the following will fail:
+Парсер шоткода не принимает фигурные скобки в качестве параметра. Это приведет к ошибки:
 
 ```
 {foo attribute="{Some value}"}Hello World{/foo}
