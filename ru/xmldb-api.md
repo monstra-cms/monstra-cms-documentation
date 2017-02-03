@@ -1,90 +1,90 @@
-### XML
+### XML данные и файлы
 
-#### Create safe xml data. Removes dangerous characters for string.
+#### Создание безопасных xml данных. Удаление опастных символов из строки.
 
 ```php
 $xml_safe = XML::safe($xml_unsafe);
 ```
 
-#### Get XML file
+#### Получение xml файла
 
 ```php
 $xml_file = XML::loadFile('path/to/file.xml');
 ```
 
 
-### DB
+### DB База данных
 
-#### Create new database
+#### Создание новой базы данных
 
 ```php
 DB::create('db_name');
 ```
 
-#### Drop database
+#### Удаление базы данных
 
 ```php
 DB::drop('db_name');
 ```
 
 
-### Table
+### Таблицы
 
-#### Table construct
+#### Новый объект таблицы
 
 ```php
 $users = new Table('table_name');
 ```
 
-#### Create new table
+#### Создание новой таблицы
 
 ```php
 Table::create('table_name', array('field1', 'field2'));
 ```
 
-#### Delete table
+#### Удаление таблицы
 
 ```php
 Table::drop('table_name');
 ```
 
-#### Get table
+#### Получение таблицы
 
 ```php
 $table = Table::get('table_name');
 ```
 
-#### Get information about table
+#### Получение информации о таблицы
 
 ```php
 var_dump($users->info());
 ```
 
-#### Get table fields
+#### Получение полей таблицы
 
 ```php
 var_dump($users->fields());
 ```
 
-#### Add new field
+#### Добавление нового поля
 
 ```php
 $users->addField('test');
 ```
 
-#### Delete field
+#### Удаление поля
 
 ```php
 $users->deleteField('test');
 ```
 
-#### Add new record
+#### Добавление новой записи
 
 ```php
 $users->insert(array('login'=>'admin', 'password'=>'pass'));
 ```
 
-#### Select record(s) in table
+#### Выбрать запись(и) из таблицы
 
 ```php
 $records = $users->select('[id=2]');
@@ -93,37 +93,37 @@ $records = $users->select(null, 'all', null, array('login'));
 $records = $users->select(null, 2, 1);
 ```
 
-#### Delete current record in table
+#### Удалить запись из таблицы по его id
 
 ```php
 $users->delete(2);
 ```
 
-#### Delete with xPath query record in xml file
+#### Удаление записи используя запрос xPath
 
 ```php
 $users->deleteWhere('[id=2]');
 ```
 
-#### Update record with xPath query in XML file
+#### Обновление записи с применением запроса xPath
 
 ```php
 $users->updateWhere('[id=2]', array('login'=>'Admin', 'password'=>'new pass'));
 ```
 
-#### Update current record in table
+#### Обновление записи по его id
 
 ```php
 $users->update(1, array('login'=>'Admin','password'=>'new pass'));
 ```
 
-#### Get last record id
+#### Получение id последней записи
 
 ```php
 echo $users->lastId();
 ```
 
-#### Get count of records
+#### Получить количество записей в таблице
 
 ```php
 echo $users->count();

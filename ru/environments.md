@@ -1,30 +1,30 @@
-The support of environments helps Monstra to make decisions based on the environment setting.
+Поддержка сред помогает Monstra принимать решения на основе параметров среды
 
-### Environments list
+### Список сред разработки
 
-Monstra has four predefined environments.
+Monstra имеет четыре предустановленных сред.
 
 `Monstra::DEVELOPMENT`
-The development environment.
+Среда разработчика.
 
 `Monstra::TESTING`
-The test environment.
+Среда для тестов.
 
 `Monstra::STAGING`
-The staging environment.
+Промежуточная среда.
 
 `Monstra::PRODUCTION`
-The production environment.
+Рабочая среда.
 
-### Set Your Environment
+### Создание своей среды
 
-Setting your environment is done by setting the `Monstra::$environment` in `/engine/_init.php`
+Настройка вашей среды производится путем изменения настроек `Monstra::$environment` в `/engine/_init.php`
 
-### Environments and Config
+### Среда и конфигурация
 
-Based on the environment the Monstra is set to, the Monstra Core class looks for environment-specific defines and preloaded actions, filters, shortcodes. The Monstra Core class will look for the same file name in a directory that's named after the current environment.
+В зависимости от среды которая выбрана, Monstra устанавливает новые системные пути к директориям, новые настройки, свои экшены, фильтры, шоткоды итд. Если в среде нет нужного файла, то данный файл берется из среды по умолчанию т.е boot
 
-Here is an example to illustrate this:
+Пример среды development и production
 
 	boot/
 	 ├── development/

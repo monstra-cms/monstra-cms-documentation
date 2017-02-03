@@ -1,4 +1,4 @@
-These standards for code formatting and documentation must be followed by anyone contributing to Monstra.<br>Any contributions that do not meet these guidelines will not be accepted.
+Эти стандарты форматирования кода и документации должны сопровождаться всеми, кто способствует развитию Monstra CMS. Любые доработки, не отвечающие этим стандартам, не будут приняты.
 
 * [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md)
 * [PSR-1: Basic Coding Standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md)

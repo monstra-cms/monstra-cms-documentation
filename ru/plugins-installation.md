@@ -1,2 +1,2 @@
-1. Unzip plugin to the folder `/plugins/`
-2. Go to administration panel: Plugins &rsaquo; Install new &rsaquo; Install
+1. Распаковать архив плагина в директорию `/plugins/`
+2. Перейти в панель администратора: Плагины &rsaquo; Установить новые &rsaquo; Установить

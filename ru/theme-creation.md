@@ -1,10 +1,10 @@
-You must create themes in the `/public/themes/` folder.  
-All themes must include an index.temlplate.php file to define the HTML structure of the theme.  
-You can seperate your theme on footer and header with help of chunks.
+Создайте директорию в `/public/themes/`   
+Создайте файл шаблона index.temlplate.php для определения HTML-структуры.
+Так же вы можете разделить вашу тему на куски с помощью чанков footer и header. Это поможет вам в будущем.
 
-### Theme structure
+### Структура простой темы
 
-	theme/
+	my-theme/
 	 ├── css/
 	 │   └── theme.css
 	 ├── js/
@@ -14,7 +14,7 @@ You can seperate your theme on footer and header with help of chunks.
 	 └── index.template.php
 
 
-### Simple Example
+### Простой пример темы с разделением на чанки
 
 #### header.chunk.php
 
@@ -28,7 +28,7 @@ You can seperate your theme on footer and header with help of chunks.
 	<meta name="keywords" content="<?php echo Site::keywords(); ?>">
 	<meta name="robots" content="<?php echo Page::robots(); ?>">
 	<!-- Styles -->
-	<?php Stylesheet::add('public/assets/css/bootstrap.css', 'frontend', 1); ?>
+	<link rel="stylesheet" href="<?php echo Site::url(); ?>/public/assets/css/bootstrap.css" type="text/css" />
 	<?php Stylesheet::add('public/themes/theme/css/theme.css', 'frontend', 2); ?>
 	<?php Stylesheet::add('public/assets/css/bootstrap-responsive.css', 'frontend', 3); ?>
 	<?php Stylesheet::load(); ?>
@@ -62,6 +62,13 @@ You can seperate your theme on footer and header with help of chunks.
 	  </div>
 	</div>
 	</div>
+	
+Обратите внимание! Если в файле стилей имеются ссылки на фоновые изображения или шрифты, то вам необходимо:
+
+или отказаться от объединения файлов т.е не добавлять в список минификации Stylesheet::add (кстати bootstrap.css именно поэтому и не учавствует в минификации)
+
+или в файл стилей добавить теги, а именно переменную адреса сайта. О переменных css вы можете узнать в статье "CSS переменные"
+
 
 #### index.template.php
 

@@ -1,20 +1,20 @@
-Monstra is an XML based, modern and lightweight Content Management System.  
-Monstra is an open-source project licensed under the GNU GENERAL PUBLIC LICENSE v3.
+Monstra это современная и легкая система управления контентом, которая работает на XML файлах.  
+Monstra это проект с открытым исходным кодом под лицензией GNU GENERAL PUBLIC LICENSE v3.
 
-### Easy
-Easy to install, upgrade and use. Monstra installation only takes a few minutes. Without any databases to configure!
+### Легкая
+Легкая установка, обновление и работа с системой. Monstra устанавливается за несколько минут. Нет необходимости в настройки базы данных!
 
-### Flexible
-Monstra provides amazing api's for plugins, themes and core developers!
+### Гибкая
+Monstra предлагает хорошее API для плагинов, тем и разработчиков функционала!
 
-### Multi-user
-Monstra allow to create several adminstrators, editors, users for your site.
+### Многопользовательская
+В Monstra возможно разделять права пользователей на администратора, редактора, пользователя.
 
-### SEO Friendly
-Monstra allow to set individual keywords, description, title, search engines robots meta tag for each page!
+### SEO дружелюбный
+В Monstra возможно установить отдельные ключевые слова, описание, заголовок, для каждой страницы!
 
-### Secure
-Monstra provides multiple levels of security to keep hackers out.
+### Безопасность
+Monstra обеспечивает несколько уровней безопасности, для защиты от хакеров.
 
 ### Open source
-Monstra is an open-source project licensed under the GNU GENERAL PUBLIC LICENSE v3 to set the world free!
+Monstra это проект с открытым исходным кодом под лицензией GNU GENERAL PUBLIC LICENSE v3!

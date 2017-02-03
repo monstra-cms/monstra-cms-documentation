@@ -1,6 +1,6 @@
-### Plugin
+### Плагин
 
-#### Register new plugin in system.
+#### Регистрация нового плагина в системе.
 
 ```php
 Plugin::register(
@@ -14,90 +14,90 @@ Plugin::register(
 );
 ```
 
-#### Get plugin admin.
+#### Подключение плагина административной части.
 ```php
 Plugin::admin('blog');
 ```
+   
+<br>
 
+### Представление
 
-### View
-
-#### Create a new view object.
+#### Представление через создания нового объекта.
 
 ```php
-// Create new view object
+// Создать новый объект
 $view = new View('blog/views/backend/index');
 
-// Assign some new variables
+// Присвоить некоторые новые переменные
 $view->assign('msg', 'Some message...');
 
-// Get view
+// Получить представление
 $output = $view->render();
 
-// Display view
+// Отобразить представление
 echo $output;
 ```
 
-#### View factory.
+#### Представление через метод factory.
 
 ```php
-// Create new view object, assign some variables
-// and displays the rendered view in the browser.
+// Создает новое представление, присваиваются
+// значения переменных и отображается.
 View::factory('blog/views/backend/index')
-   ->assign('msg', 'Some message...')
+   ->assign('msg', 'сообщение...')
    ->display();
 ```
 
-#### Assign a view variable.
+#### Присваивание новых переменных для представления.
 
 ```php
-$view->assign('msg', 'Some message...');
+$view->assign('msg', 'сообщение...');
 ```
 
-#### Include the view file and extracts the view variables before returning the generated output.
+#### Подключает файл представления и получает переменные в представление
 
 ```php
-// Get view
+// Получить представление
 $output = $view->render();
 
-// Display output
+// Отобразить представление
 echo $output;
 ```
 
-#### Displays the rendered view in the browser.
+#### Сразу получает и отображает представление. 
 
 ```php
 $view->display();
 ```
 
-
+<br>
 ### I18n
 
-#### Returns translation of a string. If no translation exists, the original will be returned. No are replaced.
+#### Возвращает перевод строки. Если перевода не существует, то передается оригинальное значение без перевода. Параметры не будут заменены.
 
 ```php
 $hello = I18n::find('Hello friends, my name is :name', 'namespace');
 ```
 
-#### Global Translation/internationalization function.
+#### Глобальный перевод/функция интернационализации
 
-Accepts an English string and returns its translation to the active system language. If the given string is not available in the current dictionary the original English string will be returned.
-
+Принимает английскую строку и возвращает ее перевод в активный язык системы. Если данная строка отсутствует в текущем словаре, то оригинальная английская строка будет возвращена.
 ```php
-// Display a translated message
+// Отобразить перевод
 echo __('Hello, world', 'namespace');
 
-// With parameter replacement
+// С параметрами замены
 echo __('Hello, :user', 'namespace', array(':user' => $username));
 ```
 
+<br>
+### Действия (Экшены)
 
-### Action
-
-#### Hooks a function on to a specific action.
+#### Хуки это крючки на определенные действия.
 
 ```php
-// Hooks a function "newLink" on to a "footer" action.
+// Зацепка функции "newLink" в экшен "footer"
 Action::add('footer', 'newLink', 10);
 
 function newLink() {
@@ -105,23 +105,23 @@ function newLink() {
 }     
 ```
 
-#### Run functions hooked on a specific action hook.
+#### Выполнение зацепленной функции 
 
 ```php
-// Run functions hooked on a "footer" action hook.
+// Выполняет зацепренную функцию "footer" , которая была добавлена выше.
 Action::run('footer');
 ```
 
+<br>
+### Фильтр
 
-### Filter
-
-#### Apply filters.
+#### Применить фильтр.
 
 ```php
 Filter::apply('content', $content);
 ```
 
-#### Add filter.
+#### Добавить фильтр.
 
 ```php
 Filter::add('content', 'replacer');
@@ -131,54 +131,61 @@ function replacer($content) {
 }
 ```
 
-
+<br>
 ### Stylesheet
 
-#### Add stylesheet
-
+#### Добавить файл стилей
+frontend - витрина сайта
+backend - административная часть
+11 (любое число) - порядок приоритета подключания
 ```php
 Stylesheet::add('path/to/my/stylesheet1.css');
 Stylesheet::add('path/to/my/stylesheet2.css', 'frontend', 11);
 Stylesheet::add('path/to/my/stylesheet3.css', 'backend',12);
 ```
 
-#### Minify, combine and load site stylesheet.
+#### Минификация, оъединение и загрузка стилей.
 
 ```php
 Stylesheet::load();
 ```
 
-
+<br>
 ### Javascript
 
-#### Add javascript
+#### Добавить javascript
 
 ```php
+// frontend - витрина сайта
+// backend - административная часть
+// 11 (любое число) - порядок приоритета подключания
 Javascript::add('path/to/my/script1.js');
 Javascript::add('path/to/my/script2.js', 'frontend', 11);
 Javascript::add('path/to/my/script3.js', 'backend', 12);
 ```
 
-#### Combine and load site javascript.
+#### Оъединение и загрузка скриптов.
 
 ```php
 Javascript::load();
 ```
 
+<br>
+### Навигация в админ интерфейсе
 
-### Navigation
-
-#### Add new item
+#### Добавить новый элемент
 
 ```php
-// Add link for left navigation
+// Добавить ссылку плагина blog в верхнее меню, раздел Контент. 
+// 11 это порядок сортировки
 Navigation::add(__('Blog'), 'content', 'blog', 11);
 
-// Add link for top navigation
+// Добавляет ссылку в меню top, но выводит просто ссылку, а элемент списка 
+// (осталось с прошлой версии, в новой просто не используется)
 Navigation::add(__('View site'), 'top', 'http://site.com/', 11, Navigation::TOP, true);
 ```
 
-#### Draw items
+#### Выводит элементы
 
 ```php
 Navigation::draw('content');

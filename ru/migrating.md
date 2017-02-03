@@ -1,2 +1,3 @@
-1. Go to the Admin panel and, in settings, change the Website URL, if needed.
-2. 2. Edit main .htaccess file and correct the RewriteBase rule.
+1. Перейдите в админ панель в раздел Настройки и там измените адрес сайта.
+2. Измените адрес сайта в файле .htaccess если добавляли правила редиректов RewriteBase .
+3. Если в шаблоне или текстах страниц есть абсолютные ссылки на изображения или файлы, то их тоже необходимо изменить. 

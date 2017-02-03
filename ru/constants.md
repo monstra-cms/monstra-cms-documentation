@@ -1,25 +1,27 @@
-| Name                    | Description                                                                                |
+
+
+| Имя                    | Описание                                                                                |
 |-------------------------|--------------------------------------------------------------------------------------------|
-| `MONSTRA_GZIP`          | Gzip output. Default is `false`                                                            |
-| `MONSTRA`               | The filesystem path to the 'monstra' folder                                                |
-| `THEMES_SITE`           | The filesystem path to the site 'themes' folder                                            |
-| `THEMES_ADMIN`          | The filesystem path to the admin 'themes' folder                                           |
-| `PLUGINS`               | The filesystem path to the 'plugins' folder                                                |
-| `PLUGINS_BOX`           | The filesystem path to the 'box' folder which is contained within the 'plugins' folder     |
-| `HELPERS`               | The filesystem path to the 'helpers' folder which is contained within the 'monstra' folder |
-| `ENGINE`                | The filesystem path to the 'engine' folder which is contained within the 'monstra' folder  |
-| `BOOT`                  | The filesystem path to the 'boot' folder which is contained within the 'monstra' folder    |
-| `STORAGE`               | The filesystem path to the 'storage' folder                                                |
-| `XMLDB`                 | The filesystem path to the 'xmldb' folder                                                  |
-| `CACHE`                 | The filesystem path to the 'cache' folder                                                  |
-| `MINIFY`                | The filesystem path to the 'minify' folder                                                 |
-| `LOGS`                  | The filesystem path to the 'logs' folder                                                   |
-| `ASSETS`                | The filesystem path to the 'assets' folder                                                 |
-| `UPLOADS`               | The filesystem path to the 'uploads' folder                                                |
-| `MONSTRA_PASSWORD_SALT` | Password salt                                                                              |
-| `MONSTRA_DATE_FORMAT`   | Date format. Default is `Y-m-d / H:i:s`                                                    |
-| `MONSTRA_EVAL_PHP`      | Eval php. Default is `false`                                                               |
-| `CHECK_MONSTRA_VERSION` | Check Monstra CMS version. Default is `true`                                               |
-| `MONSTRA_DB_DSN`        | Monstra Database DSN(Data Source Name)                                                     |
-| `MONSTRA_DB_USER`       | Monstra Database Username                                                                  |
-| `MONSTRA_DB_PASSWORD`   | Monstra Database Password                                                                  |
+| `MONSTRA_GZIP`          | Gzip сжатие страниц. По умолчанию `false`                                                            |
+| `MONSTRA`               | Путь файловой системы к директории Monstra                                                |
+| `THEMES_SITE`           | Путь файловой системы к директории с шаблонами витрины                                           |
+| `THEMES_ADMIN`          | Путь файловой системы к директории с шаблонами администратоивной части                                         |
+| `PLUGINS`               | Путь файловой системы к директории с плагинами                                                |
+| `PLUGINS_BOX`           | Путь файловой системы к директории с системными плагинами 'box'     |
+| `HELPERS`               | Путь файловой системы к директории хелперов 'helpers' |
+| `ENGINE`                | Путь файловой системы к директории 'engine'  |
+| `BOOT`                  | Путь файловой системы к директории 'boot'    |
+| `STORAGE`               | Путь файловой системы к директории 'storage' где находятся все данные                                              |
+| `XMLDB`                 | Путь файловой системы к директории библиотеки БД 'xmldb'                                               |
+| `CACHE`                 | Путь файловой системы к директории кеша 'cache'                                                |
+| `MINIFY`                | Путь файловой системы к директории файлов минификации 'minify'                                                 |
+| `LOGS`                  | Путь файловой системы к директории с логами 'logs'                                                   |
+| `ASSETS`                | Путь файловой системы к директории 'assets'                                                 |
+| `UPLOADS`               | Путь файловой системы к директории 'uploads' куда загружаются все файлы через файловый менеджер                                               |
+| `MONSTRA_PASSWORD_SALT` | Соль пароля                                                                              |
+| `MONSTRA_DATE_FORMAT`   | Формат даты. По умолчанию `Y-m-d / H:i:s`                                                    |
+| `MONSTRA_EVAL_PHP`      | Использование PHP кода в текстовом редакторе. По умолчанию `false`                                                               |
+| `CHECK_MONSTRA_VERSION` | Проверка версии Monstra CMS. По умолчанию `true`                                               |
+| `MONSTRA_DB_DSN`        | Имя источника данных DSN (Data Source Name). Подключение через ORM                                                   |
+| `MONSTRA_DB_USER`       | Логин к базе данных                                                                 |
+| `MONSTRA_DB_PASSWORD`   | Пароль к базе данных                                                                 |

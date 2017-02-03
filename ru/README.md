@@ -1,59 +1,57 @@
-## Monstra Documentation
+## Monstra Документация
 =======
-Users Guide
+Руководство пользователя
 ===========
 
-* [Welcome](welcome.md)
+* [Введение](welcome.md)
 
-### Installation
+### Установка
 
-* [System Requirements](system-requirements.md)
-* [Installation on a Web Server](installation.md)
-* [Upgrading to the Latest Version](upgrade.md)
-* [Moving Monstra or Migrating Hosts](migrating.md)
-* [Plugins Installation](plugins-installation.md)
-* [Themes Installation](theme-installation.md)
+* [Системные требования](system-requirements.md)
+* [Установка на веб-сервер](installation.md)
+* [Обновление версии движка](upgrade.md)
+* [Перенос сайта на другой хост](migrating.md)
+* [Установка плагинов](plugins-installation.md)
+* [Установка шаблона](theme-installation.md)
 
-### Admin Reference
+### Администрирование
 
-* Pages
-* Blocks
-* Files
-* Menu
-* Plugins
-* Themes
-* Snippets
-* Snippets
-* Settings
-* Users
-* Information
+* Страницы
+* [Блоки](blocks.md)
+* Файлы
+* Меню
+* Плагины
+* [Темы](theme.md)
+* [Сниппеты](snippets.md)
+* Настройки
+* Пользователи
+* Информация
 
-Developers Guide
+Разработчикам
 ================
 
-### Getting started
+### Начало
 
-* [Coding Standards](standards.md)
-* [Constants](constants.md)
-* [Environments](environments.md)
-* [Error handling](error-handling.md)
-* [Database Schema](monstra-database-schema.md)
-* [Contribute via GitHub](contribute-via-github.md)
+* [Стандарт оформления кода](standards.md)
+* [Константы конфигурации](constants.md)
+* [Среда разработки](environments.md)
+* [Обработка ошибок](error-handling.md)
+* [Схема базы данных](monstra-database-schema.md)
 
-### Theme development
+### Создание тем оформления
 
-* [Theme Creation](theme-creation.md)
-* [Template Tags](theme-template-tags.md)
-* [CSS Variables](css-variables.md)
+* [Создание темы](theme-creation.md)
+* [Теги в шаблонах](theme-template-tags.md)
+* [CSS переменные](css-variables.md)
 
-### Plugin development
+### Разработка плагина
 
-* [Plugin Creation](plugins-creation.md)
+* [Создание плагинов](plugins-creation.md)
 
-### API's
+### API
 
-* [Plugin API](plugin-api.md)
-* [Options API](option-api.md)
-* [Shortcode API](shortcode-api.md)
-* [XMLDB API](xmldb-api.md)
+* [Плагины - Plugin API](plugin-api.md)
+* [Настройки - Options API](option-api.md)
+* [Шоткод - Shortcode API](shortcode-api.md)
+* [База XMLDB API](xmldb-api.md)
 
